@@ -19,15 +19,23 @@
             <button id="getStartedBtn">Get Started</button>
         </section>
 
-        <!-- New Habit Input Section -->
+        <!-- Habit Tracker Section -->
         <section class="habit-tracker">
             <h2>Track Your Habit</h2>
             <input type="text" id="habitInput" placeholder="Enter a habit">
             <button id="addHabitBtn">Track Habit</button>
 
+            <p><strong>Total Habits Tracked: <span id="habitCount">0</span></strong></p>
+
             <ul id="habitList">
                 <!-- Habits will be displayed here -->
             </ul>
+        </section>
+
+        <!-- Streak Calendar Section -->
+        <section class="streak-calendar">
+            <h2>Streak Calendar</h2>
+            <div id="calendar"></div>
         </section>
     </main>
 

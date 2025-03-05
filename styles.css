@@ -38,7 +38,7 @@ header {
     background-color: #45a049;
 }
 
-/* New Habit Tracker Section */
+/* Habit Tracker Section */
 .habit-tracker {
     padding: 20px;
     background-color: white;
@@ -74,10 +74,95 @@ header {
     margin-top: 20px;
 }
 
+/* Habit List Items */
 #habitList li {
     padding: 10px;
     background-color: #f8f8f8;
     border: 1px solid #ddd;
     margin: 5px 0;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Streak Counter */
+.streak {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+/* Streak Calendar Section */
+.streak-calendar {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.calendar-day {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f8f8f8;
+}
+
+.completed {
+    background-color: #4CAF50 !important;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Done Button */
+.done-btn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.done-btn:hover {
+    background-color: #1E88E5;
+}
+
+/* Delete Button */
+#habitList li button {
+    background-color: #FF4C4C;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#habitList li button:hover {
+    background-color: #E53935;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
 }
